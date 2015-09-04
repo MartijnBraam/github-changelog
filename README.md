@@ -37,35 +37,35 @@ This are some issues from the bootstrap project as example
 
 ## js
 
-Fix behaviour of dropup when a click happened #16931
-Carousel cleanups #16919
-Button cleanups #16918
-... more issues here ...
+- Fix behaviour of dropup when a click happened #16931
+- Carousel cleanups #16919
+- Button cleanups #16918
+- ... more issues here ...
 
 ## feature
 
-Added NuGet support #16710
+- Added NuGet support #16710
 
 ## css
 
-Use z-index 3 to show focus state on all sides of input #17007
-Using grid inside modal misalignment #16902
-.form-group-lg, .form-group-sm <label> has wrong line-height #16824
-... more issues here ...
+- Use z-index 3 to show focus state on all sides of input #17007
+- Using grid inside modal misalignment #16902
+- .form-group-lg, .form-group-sm <label> has wrong line-height #16824
+- ... more issues here ...
 
 ## Other
 
-Have Travis CI use Ruby 2.0.0 #17012
-Add Wall of Browser Bugs entry for #16988 #16994
-Can't scroll <input type=text> on iPhone #16988
-... more issues here ...
+- Have Travis CI use Ruby 2.0.0 #17012
+- Add Wall of Browser Bugs entry for #16988 #16994
+- Can't scroll <input type=text> on iPhone #16988
+- ... more issues here ...
 
 ### table formatter output
 
 ## Other
 
 | # | Title | Labels |
-| - | ----- | ------ |
+| --- | ----- | ------ |
 | #17012 | Have Travis CI use Ruby 2.0.0 | grunt |
 | #16994 | Add Wall of Browser Bugs entry for #16988 | browser bug, docs |
 | #16988 | Can't scroll <input type=text> on iPhone | browser bug, confirmed |
@@ -73,13 +73,13 @@ Can't scroll <input type=text> on iPhone #16988
 ## feature
 
 | # | Title | Labels |
-| - | ----- | ------ |
+| --- | ----- | ------ |
 | #16710 | Added NuGet support | feature, meta |
 
 ## css
 
 | # | Title | Labels |
-| - | ----- | ------ |
+| --- | ----- | ------ |
 | #17007 | Use z-index 3 to show focus state on all sides of input | css |
 | #16902 | Using grid inside modal misalignment | css, docs |
 | #16824 | .form-group-lg, .form-group-sm <label> has wrong line-height | css |
@@ -87,7 +87,7 @@ Can't scroll <input type=text> on iPhone #16988
 ## js
 
 | # | Title | Labels |
-| - | ----- | ------ |
+| --- | ----- | ------ |
 | #16931 | Fix behaviour of dropup when a click happened | js |
 | #16919 | Carousel cleanups | js |
 | #16918 | Button cleanups | js |

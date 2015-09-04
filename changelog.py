@@ -87,27 +87,27 @@ if args.format == "simple":
     """
     ## Group name
 
-    The issue title #1
-    Another issue #2
+    - The issue title #1
+    - Another issue #2
     """
     for group in groups:
         print("## {}\n".format(group))
         for issue in groups[group]:
-            print("{} #{}".format(issue.title, issue.number))
+            print("- {} #{}".format(issue.title, issue.number))
         print("")
 
 if args.format == "table":
     """
     ## Group name
 
-    | # | Title | Labels |
-    | - | ----- | ------ |
-    | 1 | The.. | bla bl |
+    | #   | Title | Labels |
+    | --- | ----- | ------ |
+    | 1   | The.. | bla bl |
     """
     for group in groups:
         print("## {}\n".format(group))
         print("| # | Title | Labels |")
-        print("| - | ----- | ------ |")
+        print("| --- | ----- | ------ |")
         for issue in groups[group]:
             labels = []
             for l in issue.labels:
