@@ -2,6 +2,7 @@
 from github import Github
 from configparser import ConfigParser
 from argparse import ArgumentParser
+from collections import OrderedDict
 import os
 import xdg.BaseDirectory
 
@@ -82,6 +83,19 @@ for issue in issues:
 for group in list(groups.keys()):
     if len(groups[group]) == 0:
         groups.pop(group)
+
+# if grouping is used then order the groups to the same order as that the arguments are passed to the script
+# and always sort the "Other" group last if it exists
+
+if grouping:
+    ordered_groups = OrderedDict()
+    for group in args.group_by:
+        if group == "Other":
+            continue
+        ordered_groups[group] = groups[group]
+    if "Other" in groups:
+        ordered_groups["Other"] = groups["Other"]
+    groups = ordered_groups
 
 # Feed the grouped issues to a formatter
 if args.format == "simple":
