@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from github import Github
 from configparser import ConfigParser
 from argparse import ArgumentParser
