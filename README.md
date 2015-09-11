@@ -18,6 +18,11 @@ $ pip3 install -r requirements.txt
 
 ## Usage
 
+The first time you start this tool it wil create a config file in your home directory (or XDG config path) and asks for
+a Github token. This is required to access the github api and read the issues from your projects.
+
+You can create a Github token on [the Personal Access Tokens page in your profile](https://github.com/settings/tokens)
+
 ```bash
 # Create simple changelog list for v0.1 milestone
 $ github-changelog MartijnBraam/github-changelog v0.1
