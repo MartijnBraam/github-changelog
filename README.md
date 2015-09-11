@@ -27,6 +27,9 @@ You can create a Github token on [the Personal Access Tokens page in your profil
 # Create simple changelog list for v0.1 milestone
 $ github-changelog MartijnBraam/github-changelog v0.1
 
+# If you're already working the git repo path you can omit the repository name
+$ github-changelog v0.1
+
 # Create a changelog in table format
 $ github-changelog --format table MartijnBraam/github-changelog v0.1
 
