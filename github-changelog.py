@@ -122,7 +122,8 @@ if grouping:
     for group in args.group_by:
         if group == "Other":
             continue
-        ordered_groups[group] = groups[group]
+        if group in groups:
+            ordered_groups[group] = groups[group]
     if "Other" in groups:
         ordered_groups["Other"] = groups["Other"]
     groups = ordered_groups
